@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1663727851 source:c:\users\10\documents\cryptography_style\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1663722313 source:c:\users\10\documents\cryptography_style\incremento_de_memoria.c
+
