@@ -1,52 +1,26 @@
-/*solicitar usuario e login <------------ */
-
-/*gerar chave encrypt <---------------*/
-
-/*encryptar usuario e login com a mesma chave se for a primeira vez de execução*/
-
-/*salvar chave e encrypte em um vetor*/
-
-/*encryptar novamente se o usuario entrar*/
-
-/*se for feito login entao deve pegar a chave encryptar novamente*/
-
-/*gerar matriz*/
-
-/*verificar se os encrypts parecem corretos, porém deve verificar todos os encryptes do vetor, porem para verificar o
-computador deve executar uma matriz*/
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
+#define TAMANHOMEMORIA 2
+
+int quantidade_excucoes = 0;// utilizado para cotrolar as execucoes, caso seja a segunda execucao entao o metodo de verificacao é outro
+int memoria_chaves [TAMANHOMEMORIA] = {0,0,0}; /* vetor para armazenar chaves */
+
 #include "chave_primo_crypto.c"
 #include "usuario_cryptografia.c"
 #include "armazena_chave.c"
+
+
 void digitar();
+
 int main(){
-    srand(time(NULL));
-
-    digitar();
-
-
-    /*solicitarUsuario();*/
-    /* digitar();*/
-    /*int teste = gerarChave();
-
-    printf("\n \n retorno = %d \n \n ", teste);*/
-    //armazenaChaves();
-    //int verchavepublica = chavePublica();
-
-    /*printf("%d \n\n", verchavepublica);*/
-
-    //int verchave;
-    //verchave = encryptar(10);
-    //printf("%d  %d\n\n", primeiro_parametro_envio, segundo_parametro_envio);
-
-    //int chaveprivada = chavePrivadaEnvio();
-    //printf("chave privada[2] %d \n\n", chaveprivada);
-
-
+    srand(time(NULL)); // faz com que seja sorteado sempre um numero diferente
+    while(1){ // loop infinito
+       digitar();
+       quantidade_excucoes++;
+       }
 
     return 0;
 }
@@ -54,12 +28,14 @@ int main(){
 void digitar(){
     int pos= 0; /*varre o vetor para incrementar*/
     char caractere; /* recebe o caracter digitado*/
-    long int quant_digitos; /*tamanho do vetor*/
-    long int *ponteiro; /*ponteiro para alterar o tamanho do vetor*/
+    long long int quant_digitos; /*tamanho do vetor*/
+    long long int *ponteiro; /*ponteiro para alterar o tamanho do vetor*/
     ponteiro = &quant_digitos; /*ponteiro apontando para o endereço do tamanho do vetor*/
     *ponteiro = 2; /*tamanho do vetor inicia com 2*/
-    long long digitacao[quant_digitos]; /*vetor = 2*/
+    long long int digitacao[quant_digitos]; /*vetor = 2*/
+
     printf( "\n Password: " );
+
     while ( 1 )
     {
         caractere = getch(); /*pega o caracter digitado e adiciona na variavel*/
@@ -84,19 +60,25 @@ void digitar(){
              putchar( '\b' ); /*apaga novamente*/
 
         }
+
     }
-    printf( "\n\n Password: " );
+    printf("\n");
+    printf( "\n Password: " );
     for ( int i = 0; i < quant_digitos; i++)
     {
-        putchar( digitacao[ i ] );
+        putchar( digitacao[ i ] ); // mostra senha digitada
     }
 
-    printf("\n \n \n \n%lld \n", quant_digitos);
+    printf("\n \n Quantos digitos = %lld \n \n", quant_digitos); // mostra quantos digitos
 
-    int resultado = encryptar(quant_digitos, digitacao);
-    printf("\n \n Resultado = %d \n \n", resultado);
+    int resultado = encryptar(quant_digitos, digitacao); // resultado == 1, encryptar está correto
+
+    int teste = verificar_Para_Enviar(resultado); // verificar == 1, verificacao está correta.
+    printf("\n verificacao chave privada usuario =  %d \n ", teste);
+
+    printf("\n verificacao se foi cryptografado = %d \n ", resultado); //retorna chave de envio
     for( int i = 0; i <= TAMANHOMEMORIA; i++){
-        printf("chave: %d posicao: %d\n \n ", memoria_chaves[i], i); /*mostra as chaves na tela*/
+        printf("\n chave: %d indice: %d \n", memoria_chaves[i], i); /*mostra as chaves (numeros primos gerado) na tela*/
     }
 }
 
