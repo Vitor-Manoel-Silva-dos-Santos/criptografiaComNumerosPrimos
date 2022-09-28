@@ -16,9 +16,12 @@ int encryptar (long long int quanti_caracteres, long long int *percorrer_vetor){
     segundo_parametro_envio = chavePrivadaEnvio(); // recebe a chave privada
 
 
-    int para_usuario [2] = {primeiro_parametro_envio,segundo_parametro_envio}; // adiciona as chaves do usuario em um vetor
+    int para_usuario [2];
+    para_usuario[0]= primeiro_parametro_envio;
+    para_usuario[1] = segundo_parametro_envio; // adiciona as chaves do usuario em um vetor
 
     int verificacao = verificar_Para_Encryptar(primeiro_parametro_envio); // chama a funcao que verifica se pode cryptografar
+
     printf("\n verificacao para cryptografar dentro da funcao cryptografar = %d \n", verificacao);
 
     if (verificacao == 1){
@@ -28,7 +31,7 @@ int encryptar (long long int quanti_caracteres, long long int *percorrer_vetor){
 
             criptografado[i] = percorrer_vetor[i] * primeiro_parametro_envio;
 
-            printf("%lld", criptografado[i]);
+            printf("%lld - ", criptografado[i]);
 
             //putchar( criptografado[i] ); // caso queira visualizar em teclas do teclado
         }
