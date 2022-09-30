@@ -11,7 +11,7 @@
 
 <h5 href = "#objetivo"> Objetivo: </h5>
 
-<p>Receber uma informação do usúario por teclado, criptografar a informação utilizando método de criptografia com números primos.</p>
+<p>Receber uma informação do usuário por teclado, criptografar a informação utilizando método de criptografia com números primos.</p>
 
 <h5 href = "#etapas"> Etapas do projeto: </h5>
 
@@ -24,18 +24,18 @@
         <td align="center">Entrada de informações</td>
         <td>Como foco inicial teve-se que construir um método de entrada de dados pela captura 
             da tecla digitada do teclado, para isso foi utilizado a biblioteca <i>conio.h</i>, assim armazenando a 
-        informação digitada em um vetor, então foi criado um algoritmo de armazenamento em tempo real com a função __malloc__ e __realloc__.</td>
+        informação digitada em um vetor, criando assim um algoritmo de armazenamento em tempo real com a função __malloc__ e __realloc__.</td>
     </tr>
     <tr> 
-        <td align="center">Gerador de numeros primos</td>
-        <td>Gerado numeros com a lib <i>stdlib.h</i>, foi criado um método com chamada recursiva
-        para verificar se é um numero primo, caso não seja, gera-se outro numero, até que a condição
+        <td align="center">Gerador de números primos</td>
+        <td>Gerado números com a lib <i>stdlib.h</i>, foi criado um método com chamada recursiva
+        para verificar se é um numero primo, caso não seja, gera-se outro número, até que a condição
     seja verdadeira.</td>
     </tr>
     <tr>
         <td align="center"> Armazenamento chaves <br>
         (para servidor) </td>
-        <td>Pós geração de numeros primos (chaves) designasse três <b>chaves</b> ao servidor.
+        <td>Pós geração de números primos (chaves) designasse três <b>chaves</b> ao servidor.
         <p>Exemplo: </p>
         <table align="center" border="1">
             <tr>
@@ -49,9 +49,9 @@
                 <td align="center">5</td>
             </tr>
             <tr>
-                <td align="center"><b>Indice 0</b></td>
-                <td align="center"><b>Indice 1</b></td>
-                <td align="center"><b>Indice 2</b></td>
+                <td align="center"><b>Índice 0</b></td>
+                <td align="center"><b>Índice 1</b></td>
+                <td align="center"><b>Índice 2</b></td>
             </tr>
         </table>
         </td>
@@ -59,7 +59,7 @@
     <tr>
         <td align="center">Chave <i>pública usuário</i></td>
         <td>Criamos então a chave pública para criptografia da mensagem do usuário, multiplicando
-            a chave do <b>indice 0</b> pela chave do <b>indice 1</b>.
+            a chave do <b>índice 0</b> pela chave do <b>índice 1</b>.
             <table align="center" border="1">
                 <tr>
                     <td align="center">
@@ -107,7 +107,7 @@
     </tr>       
     <tr>
         <td align="center">Armazenamento chaves<br>(para usuário)</td>
-        <td>As chaves do usuário são, a chave pública para cryptografar e a chave privada para envio.
+        <td>As chaves do usuário são: a chave pública para criptografar e a chave privada para envio.
         <p>Exemplo:</p>
             <table align="center" border="1">
                 <tr>
@@ -119,19 +119,19 @@
                     <td align="center">5</td>
                 </tr>
                 <tr>
-                    <td align = "center"><b>Indice 0</b></td>
-                    <td align = "center"><b>Indice 1</b></td>
+                    <td align = "center"><b>Índice 0</b></td>
+                    <td align = "center"><b>Índice 1</b></td>
                 </tr>
             </table>
             <p>Se a chave de criptografia do usuário for verdadeira, a mensagem é criptografada, se 
-                a chave de envio do usuário, for verdadeira a mensagem é enviada.
+                a chave de envio do usuário for verdadeira a mensagem é enviada.
             </p>
         </td>
     </tr>
     <tr>
         <td align="center"><i>Modificar chaves</i></td>
-        <td>Para que sempre a criptografia seja diferente e as chaves sempre mudem, foi construido um
-            método que muda as posições das chaves e gera uma chave nova.
+        <td>Para que sempre a criptografia seja diferente e as chaves sempre mudem, foi construído um
+            método que muda as posições das chaves e gera uma nova.
         <p>Exemplo:</p>
             <table align="center" border="1">
                 <tr>
@@ -145,9 +145,9 @@
                     <td align="center">"Nova chave"</td>
                 </tr>
                 <tr>
-                    <td align="center"><b>Indice 0</b></td>
-                    <td align="center"><b>Indice 1</b></td>
-                    <td align="center"><b>Indice 2</b></td>
+                    <td align="center"><b>Índice 0</b></td>
+                    <td align="center"><b>Índice 1</b></td>
+                    <td align="center"><b>Índice 2</b></td>
                 </tr>
             </table>
             <table border="1" align="center">
@@ -160,8 +160,8 @@
                     <td align="center">"Nova chave"</td>
                 </tr>
                 <tr>
-                    <td align="center"><b>Indice 0</b></td>
-                    <td align="center"><b>Indice 1</b></td>
+                    <td align="center"><b>Índice 0</b></td>
+                    <td align="center"><b>Índice 1</b></td>
                 </tr>
             </table></td>
     </tr>
