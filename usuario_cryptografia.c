@@ -22,7 +22,7 @@ int encryptar (long long int quanti_caracteres, long long int *percorrer_vetor){
 
     int verificacao = verificar_Para_Encryptar(primeiro_parametro_envio); // chama a funcao que verifica se pode cryptografar
 
-    printf("\n verificacao para cryptografar dentro da funcao cryptografar = %d \n", verificacao);
+    //printf("\n verificacao para cryptografar dentro da funcao cryptografar = %d \n", verificacao);
 
     if (verificacao == 1){
         printf("\n criptografado: ");
@@ -31,20 +31,11 @@ int encryptar (long long int quanti_caracteres, long long int *percorrer_vetor){
 
             criptografado[i] = percorrer_vetor[i] * primeiro_parametro_envio;
 
-            printf("%lld - ", criptografado[i]);
+            printf("%lld", criptografado[i]);
 
             //putchar( criptografado[i] ); // caso queira visualizar em teclas do teclado
         }
         printf("\n");
-        //mostrando em binario:
-        /*for (long int i = 0; i < quanti_caracteres; i++){
-            int binario = criptografado[i] % 2;
-            printf(" %d ", binario);
-            if ( i % 10 == 0){
-                printf("\n");
-            }
-        }*/
-
         //desEncryptar(quanti_caracteres,criptografado);
     }
     else{

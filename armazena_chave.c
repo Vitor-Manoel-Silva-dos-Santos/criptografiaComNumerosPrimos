@@ -5,10 +5,10 @@ int armazenaChaves(int teste, int teste2){
     memoria_chaves[0] = teste; //adiciona a chave ao vetor
     memoria_chaves[1] = teste2; //adiciona a chave ao vetor
 
-    for( int i = 0; i < TAMANHOMEMORIA; i++)
+    /*for( int i = 0; i < TAMANHOMEMORIA; i++)
     {
         printf("chave: %d indice: %d \n \n ", memoria_chaves[i], i); //mostra as chaves na tela
-    }
+    }*/
 
     return memoria_chaves;
 }
@@ -42,8 +42,8 @@ int chavePublica(){
         memoria_chaves[0] = memoria_chaves[1]; // as chaves se movem um indice a frente no vetor
         memoria_chaves[1] = memoria_chaves[2]; // as chaves se movem um indice a frente no vetor
 
-        printf("\n verifica se moveu [0] = %d \n", memoria_chaves[0]);
-        printf("\n verifica se moveu [1] = %d \n", memoria_chaves[1]);
+        /*printf("\n verifica se moveu [0] = %d \n", memoria_chaves[0]);
+        printf("\n verifica se moveu [1] = %d \n", memoria_chaves[1]);*/
 
         return chave_publica = memoria_chaves[0] * memoria_chaves[1]; /*chave para criptografar a mensagem (chave publica usuario)*/
     }

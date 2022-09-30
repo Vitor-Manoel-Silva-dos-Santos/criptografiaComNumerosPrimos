@@ -1,8 +1,8 @@
 
 // sorteio de numeros primos entre inicio_limite e final_limite.
 
-#define INICIOLIMITE 10
-#define FINALLIMITE 100
+#define INICIOLIMITE 1000
+#define FINALLIMITE 10000000
 
 int chavePrimo(int numero){
     int memoria2 = numero; //variavel para armazenar decremento de numero
