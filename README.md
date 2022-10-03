@@ -3,11 +3,11 @@
 <p align = "center"> Algoritmo para simulação de criptografia de mensagens ou senhas utilizando números primos. </p>
 
 <p align="center">
- <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/new/master?readme=1#-objetivo-">Objetivo</a> •
- <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/new/master?readme=1#-etapas-do-projeto-">Etapas do projeto</a> • 
- <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/new/master?readme=1#-tecnologias-">Tecnologias</a> • 
- <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/new/master?readme=1#-fontes-">Fonte</a> • 
- <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/new/master?readme=1#-autor-">Autor</a> 
+ <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/blob/master/README.md#-objetivo-">Objetivo</a> •
+ <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/blob/master/README.md#-etapas-do-projeto-">Etapas do projeto</a> • 
+ <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/blob/master/README.md#-tecnologias-">Tecnologias</a> • 
+ <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/blob/master/README.md#-fontes-">Fonte</a> • 
+ <a href="https://github.com/Vitor-Manoel-Silva-dos-Santos/criptografiaComNumerosPrimos/blob/master/README.md#-autor-">Autor</a> 
 
 <h5 href = "#objetivo"> Objetivo: </h5>
 
